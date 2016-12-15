@@ -222,5 +222,5 @@ auto stack<T>::pop()->std::shared_ptr<T>
 			if(allocate.empty()) throw std::logic_error("Empty!"); 
 				std::shared_ptr<T> const res(std::make_shared<T>(std::move(allocate.get()[allocate.count()-1])));//Make_shared than shared_ptr to directly construct high efficiency 
 			allocate.destroy(allocate.get() + allocate.count() - 1);
-	    		return res;
+			return res;
 }
