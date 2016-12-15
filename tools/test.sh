@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 BUILD_DIR=build
